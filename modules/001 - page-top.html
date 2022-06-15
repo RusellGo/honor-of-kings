@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>王者荣耀-top</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <style>
+    .top {
+      border-bottom: 1px solid #f5f5f5;
+    }
+
+    .top-area {
+      display: flex;
+      justify-content: space-between;
+      height: 41px;
+      line-height: 41px;
+    }
+
+    .top-area .top-left {
+      display: flex;
+    }
+
+    .top-area .top-left .top-logo a {
+      display: block;
+      width: 150px;
+      text-indent: -9999px;
+      background: url(./img/top_logo.png) no-repeat center center;
+    }
+
+    .top-area .top-left .top-recommend img {
+      height: 100%;
+    }
+
+    .top-area .top-right {
+      display: flex;
+    }
+
+    .top-area .top-right .item a {
+      position: relative;
+      display: block;
+      font-size: 14px;
+      color: #464646;
+    }
+
+    .top-area .top-right .item a.growth {
+      padding-left: 30px;
+    }
+
+    .top-area .top-right .item a.growth .icon-grow {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      width: 30px;
+      height: 30px;
+      background: url(./img/top_sprite.png) no-repeat -30px 0;
+    }
+
+    .top-area .top-right .item a.txg-ranking {
+      margin-left: 20px;
+      padding-right: 30px;
+    }
+
+    .top-area .top-right .item a.txg-ranking::after {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      background: url(./img/top_sprite.png) no-repeat 0 0;
+      opacity: 0.08;
+      transform: rotate(90deg);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="top">
+    <div class="top_wrapper top-area">
+      <div class="top-left">
+        <h2 class="top-logo">
+          <a href="#">腾讯游戏</a>
+        </h2>
+        <div class="top-recommend">
+          <img src="./img/recommend_game.jpg" alt="">
+        </div>
+      </div>
+      <ul class="top-right">
+        <li class="item">
+          <a class="growth" href="#">
+            <i class="icon-grow"></i>
+            成长守护平台
+          </a>
+        </li>
+        <li class="item">
+          <a class="txg-ranking" href="#">腾讯游戏排行榜</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+
+</html>
