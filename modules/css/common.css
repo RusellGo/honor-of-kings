@@ -9,3 +9,9 @@
   width: 1300px;
   margin: 0 auto;
 }
+
+/* 主题内容宽度 */
+.main_wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
