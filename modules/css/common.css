@@ -1,4 +1,11 @@
+/* 顶部内容宽度 */
 .top_wrapper {
   width: 980px;
+  margin: 0 auto;
+}
+
+/* 头部内容宽度 */
+.header_wrapper {
+  width: 1300px;
   margin: 0 auto;
 }
