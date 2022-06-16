@@ -97,7 +97,7 @@
 }
 
 /* 赛事 */
-.news_type_event {
+.news_type_event::before {
   content: '赛事';
   color: #4d9cff;
 }
