@@ -195,7 +195,8 @@
   cursor: pointer;
 }
 
-.tab_keywords .tab_keywords_item:hover {
+.tab_keywords .tab_keywords_item:hover,
+.tab_keywords .tab_keywords_item.active {
   border-color: #f3c258;
   color: #fff;
   background-color: #f3c258;
