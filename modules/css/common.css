@@ -149,7 +149,7 @@
 .tab_control {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   height: 32px;
   background-color: #f5f5f5;
 }
