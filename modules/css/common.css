@@ -163,6 +163,11 @@
   color: #999;
 }
 
+.tab_control .tab_control_item.item_wrap {
+  flex: 0 auto;
+  padding: 0 27px;
+}
+
 .tab_control .tab_control_item:hover,
 .tab_control .tab_control_item.active {
   border-bottom: 3px solid #f3c258;
