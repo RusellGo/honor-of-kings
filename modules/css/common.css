@@ -101,3 +101,46 @@
   content: '赛事';
   color: #4d9cff;
 }
+
+/* 模块头部 */
+.section_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.section_header .header_left .header_title {
+  padding-left: 30px;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: #323235;
+  background: url(../img/main_sprite.png) no-repeat;
+}
+
+.section_header .header_left .content_center {
+  background-position: 0 -103px;
+}
+
+.section_header .header_left .hero_skin {
+  background-position: 0 -141px;
+}
+
+.section_header .header_left .match_center {
+  background-position: 0 -180px;
+}
+
+.section_header .header_left .kpl_schedule {
+  background-position: -156px -104px;
+}
+
+.section_header .header_right .header_more {
+  display: block;
+  padding-left: 22px;
+  color: #999;
+  background: url(../img/main_sprite.png) no-repeat -252px 4px;
+}
+
+.section_header .header_right .header_more:hover {
+  color: #f3c258;
+}
