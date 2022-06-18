@@ -149,6 +149,11 @@
   background-position: -156px -104px;
 }
 
+.section_header .header_right {
+  display: flex;
+  align-items: center;
+}
+
 .section_header .header_right .header_more {
   display: block;
   padding-left: 22px;
