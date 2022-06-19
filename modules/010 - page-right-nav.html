@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>王者荣耀-right-nav</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <style>
+    .right-nav {
+      position: fixed;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 254px;
+      height: 494px;
+      background: url(./img/right_nav_bg.png) no-repeat 0 0/314px;
+    }
+
+    .right-nav .right-dj {
+      position: relative;
+      top: 12px;
+      right: -20px;
+    }
+
+    .right-nav .right-dj .download-info {
+      position: absolute;
+      top: 37px;
+      left: 13px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .right-nav .right-list {
+      margin: 12px 0 0 80px;
+    }
+
+    .right-nav .right-list .item {
+      position: relative;
+      width: 117px;
+      height: 38px;
+      background: url(./img/right_all.png) no-repeat;
+    }
+
+    .right-nav .right-list .item a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .right-nav .right-list .item.code {
+      height: 136px;
+      text-align: center;
+      background-position: -243px 0;
+    }
+
+    .right-nav .right-list .item.code img {
+      width: 107px;
+      height: 107px;
+      margin-top: 3px;
+    }
+
+    .right-nav .right-list .item.wzyd {
+      background-position: -243px -134px;
+    }
+
+    .right-nav .right-list .item.wzyd:hover {
+      background-position: -243px -172px;
+    }
+
+    .right-nav .right-list .item.weibo {
+      background-position: -122px -120px;
+    }
+
+    .right-nav .right-list .item.weibo:hover {
+      background-position: -122px -240px;
+    }
+
+    .right-nav .right-list .item.gzh {
+      background-position: -122px -160px;
+    }
+
+    .right-nav .right-list .item.gzh:hover {
+      background-position: -122px -200px;
+    }
+
+    .right-nav .right-list .item.sph {
+      background-position: -122px 0;
+    }
+
+    .right-nav .right-list .item.sph:hover {
+      background-position: -122px -42px;
+    }
+
+    .right-nav .right-list .item .code-info {
+      position: absolute;
+      top: -60px;
+      left: -116px;
+      display: none;
+      width: 115px;
+      height: 144px;
+      padding-top: 7px;
+      background: url(./img/right_all.png) no-repeat 0 -416px;
+    }
+
+    .right-nav .right-list .item:hover .code-info {
+      display: block;
+      animation: code-info-animation .4s ease;
+    }
+
+    @keyframes code-info-animation {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .right-nav .right-list .item .code-info img {
+      width: 101px;
+      height: 100px;
+      margin-left: 7px;
+    }
+
+    .right-nav .right-list .item .code-info p {
+      margin-top: 4px;
+      text-align: center;
+      font-size: 12px;
+      color: #dcdcdc;
+    }
+
+    .right-nav .right-list .item .code-info .text {
+      color: #cd9748;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="right-nav">
+    <div class="right-dj">
+      <p class="download-info">扫一扫，立刻<br>下载游戏~</p>
+      <img src="./img/right_dj.png" alt="">
+    </div>
+    <ul class="right-list">
+      <li class="item code">
+        <img src="./img/right_code.webp" alt="">
+      </li>
+      <li class="item wzyd">
+        <a href="#"></a>
+        <div class="code-info">
+          <img src="./img/wzyd_code.webp" alt="">
+          <p>
+            扫码<span class="text">下载王者营地</span>
+          </p>
+          <p>
+            每天<span class="text">领取福利好礼</span>
+          </p>
+        </div>
+      </li>
+      <li class="item weibo">
+        <a href="#"></a>
+        <div class="code-info">
+          <img src="./img/weibo_code.webp" alt="">
+          <p>
+            扫码<span class="text">关注官方微博</span>
+          </p>
+          <p>
+            获取<span class="text">一手爆料及福利</span>
+          </p>
+        </div>
+      </li>
+      <li class="item gzh">
+        <a href="#"></a>
+        <div class="code-info">
+          <img src="./img/gzh_code.webp" alt="">
+          <p>
+            扫码<span class="text">关注官方公众号</span>
+          </p>
+          <p>
+            获取<span class="text">最新资讯及好礼</span>
+          </p>
+        </div>
+      </li>
+      <li class="item sph">
+        <a href="#"></a>
+        <div class="code-info">
+          <img src="./img/sph_code.webp" alt="">
+          <p>
+            扫码<span class="text">关注官方视频号</span>
+          </p>
+          <p>
+            获取<span class="text">精彩视频及福利</span>
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</body>
+
+</html>
