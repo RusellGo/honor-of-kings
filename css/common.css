@@ -1,0 +1,250 @@
+/* 顶部内容宽度 */
+.top_wrapper {
+  width: 980px;
+  margin: 0 auto;
+}
+
+/* 头部内容宽度 */
+.header_wrapper {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+/* 主题内容宽度 */
+.main_wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 内容不换行省略 */
+.nowrap_ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* 新闻类型的图标 */
+/* 第一种抽取思路，给i元素添加类 */
+/* .news_type {
+  display: inline-block;
+  width: 32px;
+  height: 16px;
+  margin-right: 2px;
+  line-height: 16px;
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid;
+  border-radius: 2px;
+}
+
+.news_type_hot {
+  content: '热门';
+  color: #ff3636;
+}
+
+.news_type_announcement {
+  color: #f4be19;
+}
+
+.news_type_news {
+  color: #1e96ab;
+}
+
+.news_type_activity {
+  color: #ff3636;
+}
+
+.news_type_event {
+  color: #4d9cff;
+} */
+
+/* 新闻类型的图标 */
+/* 第二种思路，伪元素 */
+.news_type::before {
+  display: inline-block;
+  width: 32px;
+  height: 16px;
+  margin-right: 2px;
+  line-height: 16px;
+  text-align: center;
+  font-size: 12px;
+  border: 1px solid;
+  border-radius: 2px;
+}
+
+/* 热门 */
+.news_type_hot::before {
+  content: '热门';
+  color: #ff3636;
+}
+
+/* 公告 */
+.news_type_announcement::before {
+  content: '公告';
+  color: #f4be19;
+}
+
+/* 新闻 */
+.news_type_news::before {
+  content: '新闻';
+  color: #1e96ab;
+}
+
+/* 活动 */
+.news_type_activity::before {
+  content: '活动';
+  color: #ff3636;
+}
+
+/* 赛事 */
+.news_type_event::before {
+  content: '赛事';
+  color: #4d9cff;
+}
+
+/* 赛事中心，新闻图标 */
+.match_news_type {
+  display: inline-block;
+  width: 48px;
+  height: 19px;
+  margin-right: 12px;
+  border: 2px solid #e3e3e3;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 19px;
+  font-size: 12px;
+  color: #999;
+  background-color: #e3e3e3;
+}
+
+/* 模块头部 */
+.section_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.section_header .header_left .header_title {
+  padding-left: 30px;
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: #323235;
+  background: url(../img/main_sprite.png) no-repeat;
+}
+
+.section_header .header_left .content_center {
+  background-position: 0 -103px;
+}
+
+.section_header .header_left .hero_skin {
+  background-position: 0 -141px;
+}
+
+.section_header .header_left .match_center {
+  background-position: 0 -180px;
+}
+
+.section_header .header_left .kpl_schedule {
+  background-position: -156px -104px;
+}
+
+.section_header .header_right {
+  display: flex;
+  align-items: center;
+}
+
+.section_header .header_right .header_more {
+  display: block;
+  padding-left: 22px;
+  color: #999;
+  background: url(../img/main_sprite.png) no-repeat -252px 4px;
+}
+
+.section_header .header_right .header_more:hover {
+  color: #f3c258;
+}
+
+/* 模块tab栏 */
+.tab_control {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  height: 32px;
+  background-color: #f5f5f5;
+}
+
+.tab_control .tab_control_item {
+  flex: 1;
+  border-bottom: 3px solid transparent;
+  line-height: 29px;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+
+.tab_control .tab_control_item.item_wrap {
+  flex: 0 auto;
+  padding: 0 27px;
+}
+
+.tab_control .tab_control_item:hover,
+.tab_control .tab_control_item.active {
+  border-bottom: 3px solid #f3c258;
+  color: #333;
+}
+
+.tab_control .tab_control_line {
+  width: 1px;
+  height: 20px;
+  background-color: #e1e1e1;
+}
+
+/* 关键字选项卡 */
+.tab_keywords {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.tab_keywords .tab_keywords_item {
+  height: 24px;
+  line-height: 24px;
+  margin: 0 8px 10px 0;
+  padding: 0 12px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #333;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.tab_keywords .tab_keywords_item:hover,
+.tab_keywords .tab_keywords_item.active {
+  border-color: #f3c258;
+  color: #fff;
+  background-color: #f3c258;
+}
+
+/* icon type */
+.icon_type {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 2px;
+
+  background: url(../img/main_sprite.png) no-repeat;
+}
+
+.icon_type_hot {
+  background-position: -161px -67px;
+}
+
+.icon_type_fans {
+  background-position: -136px -67px;
+}
+
+.icon_type_guard {
+  background-position: -136px -5px;
+}

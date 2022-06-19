@@ -1,0 +1,110 @@
+.footer {
+  height: 362px;
+  background: url(../img/footer_bg.webp) no-repeat center bottom;
+}
+
+.footer .footer-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+.footer .footer-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #d4d4d4;
+}
+
+.footer .footer-top a {
+  display: block;
+  height: 64px;
+  background: url(../img/footer_sprite.png) no-repeat;
+}
+
+.footer .footer-top a.tencent {
+  width: 285px;
+  background-position: 0 0;
+}
+
+.footer .footer-top a.timi {
+  width: 70px;
+  background-position: -285px 0;
+}
+
+.footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .footer-content .left{
+  width: 508px;
+}
+
+.footer .footer-content .left p {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.footer .footer-content .left p.declaration > em {
+  margin-right: 9px;
+  font-style: normal;
+  color: #6d6d6d;
+}
+
+.footer .footer-content .left p.intro {
+  margin-top: 6px;
+  color: #666;
+}
+
+.footer .footer-content .right {
+  width: 650px;
+}
+
+.footer .footer-content .right .list {
+  display: flex;
+}
+
+.footer .footer-content .right .list .line,
+.footer .footer-content .right .list .item a {
+  font-size: 12px;
+  color: #646467;
+}
+
+.footer .footer-content .right .list .line {
+  margin: 3px 2px 0;
+}
+
+.footer .footer-content .right p {
+  font-size: 12px;
+  line-height: 20px;
+  color: #646467;
+}
+
+.footer .footer-content .right p a {
+  font-size: 12px;
+  color: #646467
+}
+
+.footer .footer-content .right p a img {
+  position: relative;
+  top: 2px;
+}
+
+.footer .footer-content .right p span {
+  margin: 3px 4px 0;
+}
+
+.footer .footer-content .right p:nth-of-type(1) {
+  margin-top: 6px;
+}
+
+.footer .footer-content .right p:nth-of-type(1) a:nth-of-type(1) {
+  margin: 0 8px 0 20px;
+}
+
+.footer .footer-content .right p:last-of-type {
+  margin-top: 20px;
+  color: #666;
+}

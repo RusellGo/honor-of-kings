@@ -1,0 +1,170 @@
+.news-section {
+  position: relative;
+  display: flex;
+  height: 342px;
+  background: url(../img/news_bg.png) no-repeat;
+}
+
+/* 
+  新闻左边部分
+ */
+/* 顶部轮播图 */
+.news-section .news-banner {
+  width: 605px;
+}
+
+.news-section .news-banner .image-list {
+  display: flex;
+  width: 604px;
+  overflow: hidden;
+}
+
+.news-section .news-banner .image-list .item {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.news-section .news-banner .image-list .item a {
+  display: block;
+}
+
+.news-section .news-banner .image-list .item a img {
+  width: 100%;
+}
+
+/* 底部tab栏 */
+.news-section .news-banner .title-list {
+  display: flex;
+}
+
+.news-section .news-banner .title-list .item {
+  flex: 1;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  font-size: 14px;
+  color: #b1b2be;
+}
+
+.news-section .news-banner .title-list .item:hover,
+.news-section .news-banner .title-list .item.active {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #f3c258;
+}
+
+/* 
+  新闻中间部分
+*/
+/* 顶部 */
+.news-section .news-column {
+  flex: 1;
+  padding: 0 17px;
+  overflow: hidden;
+}
+
+.news-section .news-column .tab-list {
+  display: flex;
+  border-bottom: 1px solid #000;
+}
+
+.news-section .news-column .tab-list .item {
+  width: 52px;
+  transition: border-bottom 150ms;
+}
+
+.news-section .news-column .tab-list .item:not(.more):hover,
+.news-section .news-column .tab-list .item.active {
+  border-bottom: 3px solid #f3c258;
+}
+
+.news-section .news-column .tab-list .item a {
+  display: block;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 14px;
+  color: #b8b9c5;
+}
+
+.news-section .news-column .tab-list .item:not(.more):hover a,
+.news-section .news-column .tab-list .item.active a {
+  color: #f3c258;
+}
+
+.news-section .news-column .tab-list .item.more a {
+  line-height: 40px;
+}
+
+.news-section .news-column .notice {
+  height: 36px;
+  line-height: 36px;
+  margin: 18px 0 11px;
+  padding: 0 15px;
+  background-color: #414046;
+}
+
+.news-section .news-column .notice>a {
+  display: block;
+  font-size: 18px;
+  color: #f3c258;
+}
+
+.news-section .news-column .news-list .item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.news-section .news-column .news-list .item .news-title {
+  flex: 1;
+  font-size: 14px;
+  color: #b8b9c5;
+}
+
+.news-section .news-column .news-list .item .date {
+  padding: 0 8px;
+  font-size: 12px;
+  color: #999;
+}
+
+/* 
+  新闻右边部分
+ */
+.news-section .news-operation {
+  width: 236px;
+}
+
+.news-section .news-operation a {
+  display: block;
+  background: url(../img/main_sprite.png) no-repeat;
+}
+
+.news-section .news-operation a.download-btn {
+  height: 128px;
+  background-position: 0 -219px;
+}
+
+.news-section .news-operation a.guard-btn {
+  height: 106px;
+  background-position: 0 -350px;
+}
+
+.news-section .news-operation a.experience-btn {
+  height: 108px;
+  background-position: 0 -461px;
+}
+
+.news-section .age-limit {
+  position: absolute;
+  top: 0;
+  right: -58px;
+}
+
+.news-section .age-limit .item {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.news-section .age-limit .item img {
+  width: 53px;
+}

@@ -1,0 +1,27 @@
+.main .entrance-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 28px 0 34px 0;
+}
+
+.main .entrance-section .item {
+  width: 291px;
+  height: 134px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.main .entrance-section .item a {
+  display: block;
+  width: 100%;
+}
+
+.main .entrance-section .item a img {
+  width: 100%;
+  height: 100%;
+  transition: transform .3s ease;
+}
+
+.main .entrance-section .item a:hover img {
+  transform: scale(1.1);
+}
